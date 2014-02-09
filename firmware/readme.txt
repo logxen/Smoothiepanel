@@ -26,6 +26,6 @@ Be sure to have run the BuildShell script, then from your mbed directory run: py
 
 To flash:
 
-For now, follow the process for flashing the Smoothie bootloader here: http://smoothieware.org/flashing-the-bootloader
+If you are running Windows you can use the usb drag and drop system built into the mcu (plug in usb or reset while holding the isp button). Otherwise, for now, follow the process for flashing the Smoothie bootloader here using an FTDI without USB plugged in: http://smoothieware.org/flashing-the-bootloader
 
 Eventually, I plan to have a bootloader with similar functionality to the one Triffid_Hunter wrote for Smoothie.
