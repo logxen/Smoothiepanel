@@ -1,4 +1,4 @@
-SmoothiePanel is an Open Source Hardware integrated PanelMax. The goal is to bring a 20x4 Character Display with RGB Backlight, RGB illuminated click-encoder, and illuminated Play and Back buttons down to a single I2C port. The basic interface panel supports an illuminated pause button, an illuminated back button, an RGB Click Encoder, a Wii Nunchuck, and lots of extra io!
-It is intended to control a Smoothieboard ( GPL too ... http://github.com/arthurwolf/SmoothieBoard ) though could easily be connected to any system with available I2C.
+SmoothiePanel is an Open Source Hardware control interface for industrial robotic machinery. It adds a screen and user interface to allow easy control of a Smoothieboard. The current design brings a graphic LCD with RGB Backlight and changeable interface panel down to a port, optionally SPI, UART, or USB.
+It is intended to control a Smoothieboard (http://smoothieware.org/), though could easily be connected to almost any logic control system. The firmware found in the firmware directory makes Smoothiepanel behave as a simple slave device that can be used via SPI, UART, or USB. As it is completely open source, however, it is very easy to write custom firmware that takes more advantage of its powerful 50MHz processor and 16 bits worth of extra gpio.
 
-It is based around the PCA9505 port expander and the PCA9634 led controller.
+The latest prototype is based around the LPC11UxxFBD64, which sports a 50MHz ARM Cortex-M0 processor with built in USB and up to 128KB of flash space for code.

@@ -1,0 +1,71 @@
+Partlist
+
+Exported from Smoothiepanel-adc.sch at 1/17/2014 8:20:24 PM
+
+EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
+
+Assembly variant: 
+
+Part     Value                Device                    Package            Library                    Sheet
+
+C1       0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
+C2       0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
+C3       18pF                 CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
+C4       18pF                 CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
+C5       0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
+C6       0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
+C7       0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
+C8       0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
+C9       0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
+C10      0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
+C11      1uF                  C-USC0805                 C0805              resistor                   1
+C12      10uF                 CAP_POL1206               EIA3216            SparkFun                   1
+C13      0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
+C14      0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
+C15      18pF                 CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
+C16      18pF                 CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
+D1       MBRA210LT3           DIODESMA                  SMADIODE           microbuilder               1
+D2       MBRA210LT3           DIODESMA                  SMADIODE           microbuilder               1
+JP1      LCD                  M22                       1X22               logxen                     1
+JP2      VIN                  MTA02-100                 10X02MTA           con-amp                    1
+JP3      SPI0                 M03X2                     2X3-SHROUDED       SparkFun-Connectors        1
+JP4      UART                 M06SIP                    1X06               SparkFun-Connectors        1
+JP5      SPI1/SD              M03X2                     2X3-SHROUDED       SparkFun-Connectors        1
+JP6      I2C                  M05PTH                    1X05               SparkFun-Connectors        1
+JP7      EXT                  M05PTH                    1X05               SparkFun-Connectors        1
+PCB1     WII_NUNCHUCK         WII_NUNCHUCK              WII_NUNCHUCK       logxen                     1
+Q1       BC857B               TRANSISTOR_PNPSMD         SOT23-3            SparkFun-DiscreteSemi      1
+R1       0R                   RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+R2       1.5kOhm              RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+R3       10kOhm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+R4       10kOhm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+R5       10kOhm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+R6       33 Ohm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+R7       33 Ohm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+R8       3kOhm                RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+R9       24kOhm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+R10      100 Ohm              RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+R11      10kOhm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+R12      NP                   RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+R13      10kOhm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+R14      10kOhm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+R15      10kOhm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+R22      0R                   RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+R23      0R                   RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+R24      0R                   RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
+S1       RESET                TAC_SWITCHSMD             TACTILE_SWITCH_SMD SparkFun-Electromechanical 1
+S2       ISP                  TAC_SWITCHSMD             TACTILE_SWITCH_SMD SparkFun-Electromechanical 1
+SJ1      VUART                SOLDERJUMPER_2WAYS        SJ_3               SparkFun                   1
+SJ2      VI2C                 SOLDERJUMPER_2WAYPASTE2&3 SJ_3_PASTE2&3      SparkFun-Passives          1
+U1       LPC11U24FBD64        LPC11U24_QFP64            LQFP64             microbuilder               1
+U2       LM1117-3.3V          V_REG_LM1117SOT223        SOT223             SparkFun                   1
+U3       MCP4725              DAC_MCP4725               SOT23-6            microbuilder               1
+W1       PAPILIO-WING-8BITS   PAPILIO-WING-8BITS        PAPILIO-WING-8BITS logxen                     1
+W2       PAPILIO-WING-8BITS   PAPILIO-WING-8BITS        PAPILIO-WING-8BITS logxen                     1
+X1       USB-B                USBPTH                    USB-B-PTH          SparkFun-Connectors        1
+X2       mUSB                 USB-MINIB-5PIN            USB-MINIB          SparkFun-Connectors        1
+X3       USB-MICROB-SMDRECEPT USB-MICROB-SMDRECEPT      USB-MICROB-RECEPT  logxen                     1
+X4       uSD                  USD-SOCKETNEW             MICRO-SD-SOCKET-PP SparkFun-Connectors        1
+X5       SD                   SD_CARD_SOCKET4UCON       SDCARD_4UCONN      SparkFun-Connectors        1
+X6       VIN                  180-2                     180-2              con-weidmueller-sl35       1
+Y1       12MHz                CRYSTAL2.5X2.0MM          CRYSTAL_2.5X2      microbuilder               1
