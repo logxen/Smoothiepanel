@@ -15,13 +15,18 @@ Clone https://github.com/mbedmicro/mbed and get any basic dependencies that requ
 
 Be sure to have run the BuildShell script, then from your mbed directory run: python workspace-tools/build.py -m LPC11U35_401 -t GCC_ARM -u
 
+Finally, you need to add a section to your mbed/workspace-tools/test.py like the following, but make sure to change "/path/to/git" to match wherever you cloned Smoothiepanel (for me that's "/home/logxen/git"):
+
+    {
+        "id": "Smoothiepanel", "description": "Smoothiepanel http://smoothieware.org/smoothiepanel",
+        "source_dir": join("/path/to/git", "Smoothiepanel", "firmware"),
+        "dependencies": [MBED_LIBRARIES, USB_LIBRARIES],
+    },
+
 
 To build:
 
-Add the Smoothiepanel src files to a test project in the mbed build system. Make sure to include both MBED_LIBRARIES and USB_LIBRARIES dependencies in the test.py entry. The mbed build system is described here: http://mbed.org/handbook/mbed-tools
-
-Be sure to have run the BuildShell script, then from your mbed directory run: python workspace-tools/make.py -m LPC11U35_401 -t GCC_ARM -p 108
-(except replace "108" with whatever your project number happens to be in the mbed system)
+Be sure to have run the BuildShell script, then from your mbed directory run: python workspace-tools/make.py -m LPC11U35_401 -t GCC_ARM -n Smoothiepanel
 
 
 To flash:
