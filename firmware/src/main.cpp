@@ -4,7 +4,7 @@
 #include "nunchuck.h"
 #include "utils.h"
 
-USBSerial usbdevice;
+USBSerial usbdevice(0x1D50, 0x60A0, 0x00);
 Serial uart(P0_19, P0_18); // tx, rx
 SPISlave spidevice(P0_9, P0_8, P0_10, P0_2); // mosi, miso, sck, ssel
 
@@ -553,6 +553,8 @@ int main(void) {
     spidevice.format(16, 0);
     spidevice.frequency(1000000);
     spidevice.reply(0x0000); // preload spi slave with null reply
+
+    init_gpio();
 
     lcd_d.input();
     lcd_rs = 0; // 0 cmd, 1 dat
