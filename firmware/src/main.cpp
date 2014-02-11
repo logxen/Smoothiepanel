@@ -4,7 +4,12 @@
 #include "nunchuck.h"
 #include "utils.h"
 
-USBSerial usbdevice(0x1D50, 0x60A0, 0x00);
+#define USB_VID         0x1D50
+#define USB_PID         0x60A0
+#define USB_REV         0x00
+#define VERSION         0x0001
+
+USBSerial usbdevice(USB_VID, USB_PID, USB_REV); // vid pid rev
 Serial uart(P0_19, P0_18); // tx, rx
 SPISlave spidevice(P0_9, P0_8, P0_10, P0_2); // mosi, miso, sck, ssel
 
@@ -41,6 +46,19 @@ int processcommand(int c, int d) {
         // System
         case 0x00: // nop
             r = 0x0000;
+            break;
+
+        case 0x01: // read usb vid
+            r = USB_VID;
+            break;
+        case 0x02: // read usb pid
+            r = USB_PID;
+            break;
+        case 0x03: // read usb revision
+            r = USB_REV;
+            break;
+        case 0x04: // read version
+            r = VERSION;
             break;
 
         // LCD
