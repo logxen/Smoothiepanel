@@ -25,6 +25,13 @@ I2C i2c(P0_5, P0_4); // sda, scl
 
 int nunchuck_rate;
 
+bool encoder_running = false;
+int16_t encoder_count = 0;
+uint8_t encoder_a_pin;
+uint8_t encoder_b_pin;
+bool encoder_a_wing;
+bool encoder_b_wing;
+
 int processcommand(int c, int d) {
     int r;
     uint32_t t;
@@ -389,6 +396,8 @@ int processcommand(int c, int d) {
             break;
 
         // other functions
+
+        // nunchuck
         case 0x80: // init nunchuck (write 0 to sample manually, write >0 to set auto sampling speed)
             nunchuck_poll(&i2c);
             nunchuck_rate = (nunchuck_type >= 0) ? d : 0;
@@ -408,6 +417,20 @@ int processcommand(int c, int d) {
             break;
         case 0x85: // sample nunchuck
             r = 0x8500 + nunchuck_read(&i2c);
+            break;
+
+        // encoder
+        case 0x86: // init encoder (data bits: 7 channel a wing, 6:4 channel a pin, 3 channel b wing, 2:0 channel b pin)
+            r = 0x8600;
+            encoder_a_wing = (d>>7)&0x01;
+            encoder_a_pin = (d>>4)&0x07;
+            encoder_b_wing = (d>>3)&0x01;
+            encoder_b_pin = d&0x07;
+            encoder_running = true;
+            break;
+        case 0x87: // read encoder (data: 1 to reset counter, 0 to not reset counter)
+            r = encoder_count;
+            if (d == 1) encoder_count = 0;
             break;
 
         // 0xDEAD
@@ -507,6 +530,17 @@ void nunchuck_onloop() {
     }
 }
 
+void encoder_onloop() {
+	static int8_t enc_states[] = {0,-1,1,0,1,0,0,-1,-1,0,0,1,0,1,-1,0};
+	static uint8_t old_AB = 0;
+    if(encoder_running) {
+	    old_AB <<= 2;                   //remember previous state
+        old_AB |= (processcommand(encoder_a_wing == 0 ? 0x41 : 0x51, 0x00)>>encoder_a_pin)&0x01;
+        old_AB |= ((processcommand(encoder_b_wing == 0 ? 0x41 : 0x51, 0x00)>>encoder_b_pin)&0x01)<<1;
+        encoder_count += enc_states[(old_AB&0x0f)];
+    }
+}
+
 void init_gpio() {
     LPC_IOCON->TDI_PIO0_11 = 0x81;
     LPC_IOCON->TMS_PIO0_12 = 0x81;
@@ -579,6 +613,7 @@ int main(void) {
         uartdevice_onloop();
         spidevice_onloop();
         nunchuck_onloop();
+        encoder_onloop();
     }
 }
 
