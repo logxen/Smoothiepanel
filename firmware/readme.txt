@@ -13,9 +13,9 @@ This will create a BuildShell script that you will run any time you want to use 
 
 Clone https://github.com/mbedmicro/mbed and get any basic dependencies that requires like Python installed.
 
-Be sure to have run the BuildShell script, then from your mbed directory run: python workspace-tools/build.py -m LPC11U35_401 -t GCC_ARM -u
+Be sure to have run the BuildShell script, then from your mbed directory run: python workspace_tools/build.py -m LPC11U35_401 -t GCC_ARM -u
 
-Finally, you need to add a section to your mbed/workspace-tools/test.py like the following, but make sure to change "/path/to/git" to match wherever you cloned Smoothiepanel (for me that's "/home/logxen/git"):
+Finally, you need to add a section to your mbed/workspace_tools/tests.py like the following, but make sure to change "/path/to/git" to match wherever you cloned Smoothiepanel (for me that's "/home/logxen/git"):
 
     {
         "id": "Smoothiepanel", "description": "Smoothiepanel http://smoothieware.org/smoothiepanel",
@@ -26,7 +26,7 @@ Finally, you need to add a section to your mbed/workspace-tools/test.py like the
 
 To build:
 
-Be sure to have run the BuildShell script, then from your mbed directory run: python workspace-tools/make.py -m LPC11U35_401 -t GCC_ARM -n Smoothiepanel
+Be sure to have run the BuildShell script, then from your mbed directory run: python workspace_tools/make.py -m LPC11U35_401 -t GCC_ARM -n Smoothiepanel
 
 
 To flash:
