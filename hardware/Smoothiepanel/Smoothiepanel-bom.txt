@@ -1,71 +1,33 @@
-Partlist
+Partlist exported from C:/Users/Logxen/Documents/eagle/Smoothie/Smoothiepanel/Smoothiepanel/Smoothiepanel-Proto5.sch at 7/15/2014 9:03:24 AM
 
-Exported from Smoothiepanel-adc.sch at 1/17/2014 8:20:24 PM
+Qty Value         Device              Package            Parts                                                   Description                                                                                                                                                                                               MF MPN OC_FARNELL OC_NEWARK PROD_ID    VALUE
+13  0.1uF         CAP0603-CAP         0603-CAP           C2, C3, C4, C5, C6, C7, C8, C9, C10, C12, C13, C16, C17 Capacitor                                                                                                                                                                                                                                             
+6   0R            RESISTOR0603-RES    0603-RES           R6, R10, R11, R18, R20, R21                             Resistor                                                                                                                                                                                                                                              
+1   1.5K          RESISTOR0603-RES    0603-RES           R23                                                     Resistor                                                                                                                                                                                                                                              
+1   100R          RESISTOR0603-RES    0603-RES           R22                                                     Resistor                                                                                                                                                                                                                                              
+8   10K           RESISTOR0603-RES    0603-RES           R2, R3, R4, R7, R8, R9, R13, R14                        Resistor                                                                                                                                                                                                                                              
+1   10uF          CAP_POL1206         EIA3216            C11                                                     Capacitor Polarized                                                                                                                                                                                                                                   
+1   12MHz         CRYSTALTHIN         CRYSTAL_3.2X2.5    Y1                                                      Crystals                                                                                                                                                                                                                                              
+4   18pF          CAP0603-CAP         0603-CAP           C14, C15, C18, C19                                      Capacitor                                                                                                                                                                                                                                             
+1   1uF           C-USC0805           C0805              C1                                                      CAPACITOR, American symbol                                                                                                                                                                                                                            
+1   24K           RESISTOR0603-RES    0603-RES           R17                                                     Resistor                                                                                                                                                                                                                                              
+2   330R          RESISTOR0603-RES    0603-RES           R1, R5                                                  Resistor                                                                                                                                                                                                                                              
+2   33R           RESISTOR_0603MP     _0603MP            R16, R19                                                Resistors                                                                                                                                                                                                                                             
+1   3K            RESISTOR0603-RES    0603-RES           R15                                                     Resistor                                                                                                                                                                                                                                              
+1   BC857B        TRANSISTOR_PNPSMD   SOT23-3            Q1                                                      Generic PNP BJT. Double check pinouts against datasheets- not all devices are the same!                                                                                                                                                               
+1   FB            INDUCTOR0603        0603               L1                                                      Inductors                                                                                                                                                                                                                                             
+1   LM1117-3.3V   V_REG_LM1117SOT223  SOT223             U1                                                      Voltage Regulator LM1117                                                                                                                                                                                                                              
+1   LPC176xFBD100 LPC1768             LQFP100            U2                                                      LPC1768 100 MHz 32-bit ARM Cortex-M3 based microcontroller featuring a high level of integration and low power consumption. 512 kB Flash, 64 kB SRAM, USB Device/Host/OTG, Ethernet, CAN, I2S, 10-bit DAC                                             
+2   MBRA210LT3    DIODESMA            SMADIODE           D1, D2                                                  Diode                                                                                                                                                                                                                                                 
+1   MCP4725       DAC_MCP4725         SOT23-6            U3                                                      MCP4725 - 12-Bit I2C DAC with on-board EEPROM                                                                                                                                                                                                         
+1   POWER         LED0603             LED-0603           LED1                                                    LEDs                                                                                                                                                                                                                                                  
+1   STATUS        LED0603             LED-0603           LED2                                                    LEDs                                                                                                                                                                                                                                                  
 
-EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
-
-Assembly variant: 
-
-Part     Value                Device                    Package            Library                    Sheet
-
-C1       0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
-C2       0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
-C3       18pF                 CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
-C4       18pF                 CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
-C5       0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
-C6       0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
-C7       0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
-C8       0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
-C9       0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
-C10      0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
-C11      1uF                  C-USC0805                 C0805              resistor                   1
-C12      10uF                 CAP_POL1206               EIA3216            SparkFun                   1
-C13      0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
-C14      0.1uF                CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
-C15      18pF                 CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
-C16      18pF                 CAP0603-CAP               0603-CAP           SparkFun-Capacitors        1
-D1       MBRA210LT3           DIODESMA                  SMADIODE           microbuilder               1
-D2       MBRA210LT3           DIODESMA                  SMADIODE           microbuilder               1
-JP1      LCD                  M22                       1X22               logxen                     1
-JP2      VIN                  MTA02-100                 10X02MTA           con-amp                    1
-JP3      SPI0                 M03X2                     2X3-SHROUDED       SparkFun-Connectors        1
-JP4      UART                 M06SIP                    1X06               SparkFun-Connectors        1
-JP5      SPI1/SD              M03X2                     2X3-SHROUDED       SparkFun-Connectors        1
-JP6      I2C                  M05PTH                    1X05               SparkFun-Connectors        1
-JP7      EXT                  M05PTH                    1X05               SparkFun-Connectors        1
-PCB1     WII_NUNCHUCK         WII_NUNCHUCK              WII_NUNCHUCK       logxen                     1
-Q1       BC857B               TRANSISTOR_PNPSMD         SOT23-3            SparkFun-DiscreteSemi      1
-R1       0R                   RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-R2       1.5kOhm              RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-R3       10kOhm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-R4       10kOhm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-R5       10kOhm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-R6       33 Ohm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-R7       33 Ohm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-R8       3kOhm                RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-R9       24kOhm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-R10      100 Ohm              RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-R11      10kOhm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-R12      NP                   RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-R13      10kOhm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-R14      10kOhm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-R15      10kOhm               RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-R22      0R                   RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-R23      0R                   RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-R24      0R                   RESISTOR0603-RES          0603-RES           SparkFun-Resistors         1
-S1       RESET                TAC_SWITCHSMD             TACTILE_SWITCH_SMD SparkFun-Electromechanical 1
-S2       ISP                  TAC_SWITCHSMD             TACTILE_SWITCH_SMD SparkFun-Electromechanical 1
-SJ1      VUART                SOLDERJUMPER_2WAYS        SJ_3               SparkFun                   1
-SJ2      VI2C                 SOLDERJUMPER_2WAYPASTE2&3 SJ_3_PASTE2&3      SparkFun-Passives          1
-U1       LPC11U24FBD64        LPC11U24_QFP64            LQFP64             microbuilder               1
-U2       LM1117-3.3V          V_REG_LM1117SOT223        SOT223             SparkFun                   1
-U3       MCP4725              DAC_MCP4725               SOT23-6            microbuilder               1
-W1       PAPILIO-WING-8BITS   PAPILIO-WING-8BITS        PAPILIO-WING-8BITS logxen                     1
-W2       PAPILIO-WING-8BITS   PAPILIO-WING-8BITS        PAPILIO-WING-8BITS logxen                     1
-X1       USB-B                USBPTH                    USB-B-PTH          SparkFun-Connectors        1
-X2       mUSB                 USB-MINIB-5PIN            USB-MINIB          SparkFun-Connectors        1
-X3       USB-MICROB-SMDRECEPT USB-MICROB-SMDRECEPT      USB-MICROB-RECEPT  logxen                     1
-X4       uSD                  USD-SOCKETNEW             MICRO-SD-SOCKET-PP SparkFun-Connectors        1
-X5       SD                   SD_CARD_SOCKET4UCON       SDCARD_4UCONN      SparkFun-Connectors        1
-X6       VIN                  180-2                     180-2              con-weidmueller-sl35       1
-Y1       12MHz                CRYSTAL2.5X2.0MM          CRYSTAL_2.5X2      microbuilder               1
+1   BOOT          TAC_SWITCHSMD       TACTILE_SWITCH_SMD S3                                                      Momentary Switch                                                                                                                                                                                                                                      
+1   ISP           TAC_SWITCHSMD       TACTILE_SWITCH_SMD S2                                                      Momentary Switch                                                                                                                                                                                                                                      
+1   JTAG          JTAG-CORTEXM3       2X05_1.27MM_SMT    JTAG1                                                   Serial Wire (SW-DP) Connector                                                                                                                                                                                                                         
+1   RESET         TAC_SWITCHSMD       TACTILE_SWITCH_SMD S1                                                      Momentary Switch                                                                                                                                                                                                                                      
+1   SD            SD_CARD_SOCKET4UCON SDCARD_4UCONN      X4                                                      SD Memory Card Connector, push-push normal type, CD enable, WP enable                                                                                                                                                                                 
+1   SPI0          M03X2               2X3-SHROUDED       JP5                                                     Shrouded 2x3 .1" header, with keying.                                                                                                                                                                                                                 
+1   USB-B         USBPTH              USB-B-PTH          X1                                                      USB Connectors                                                                                                                                                                                                                        CONN-08278 USB-B
+1   VIN           180-2               180-2              Z1                                                      WEIDMUELLER CLAMP CONNECTOR                                                                                                                                                                                      unknown    unknown                   
